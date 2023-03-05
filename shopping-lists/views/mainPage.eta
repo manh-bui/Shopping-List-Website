@@ -1,0 +1,15 @@
+<% layout("../layout/layout.eta") %>
+
+<h1>Shared shopping lists</h1>
+
+<a href="http://localhost:7777/lists">Lists </a>
+
+<h2> Page Statistics</h2>
+
+<% if (it.numberOfLists) { %>
+    <p>Shopping lists: <%= it.numberOfLists %></p>
+    <p>Shopping list items: <%= it.numberOfItems %></p>
+<% } else { %>
+    <p>No shopping lists yet.</p>
+<% } %>
+
